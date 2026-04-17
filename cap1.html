@@ -19,38 +19,25 @@ body{
 /* topo */
 .metodo{
   color:rgba(255,255,255,0.45);
-  font-size:14px;
+  font-size:13px;
   letter-spacing:2px;
-  margin-bottom:6px;
-}
-
-.main-title{
-  color:#FFD700;
-  font-size:28px;
-  margin-bottom:10px;
-}
-
-/* linha sutil */
-.linha{
-  width:60px;
-  height:1px;
-  background:#fff;
-  margin:18px auto;
-  opacity:0.6;
+  margin-bottom:18px;
 }
 
 /* frase gatilho */
 .gatilho{
   color:#eaeaea;
   font-size:16px;
-  margin-bottom:60px;
+  line-height:1.4;
 }
 
-/* capítulo */
-h1{
+/* título principal (ajustado — sem gritar) */
+.main-title{
   color:#FFD700;
-  font-size:30px;
-  margin-bottom:20px;
+  font-size:22px;
+  font-weight:500;
+  letter-spacing:1px;
+  margin:0;
 }
 
 /* mini descrição */
@@ -58,6 +45,7 @@ h1{
   color:rgba(255,255,255,0.45);
   font-size:16px;
   margin-bottom:28px;
+  line-height:1.5;
 }
 
 /* títulos */
@@ -65,11 +53,13 @@ h1{
   color:#FFD700;
   font-size:20px;
   margin-bottom:10px;
+  font-weight:500;
 }
 
 .capitulo-subtitulo{
   font-size:22px;
   margin-bottom:20px;
+  font-weight:700;
 }
 
 /* texto */
@@ -85,7 +75,7 @@ p{
 .subtitulo{
   margin-top:40px;
   margin-bottom:14px;
-  font-weight:bold;
+  font-weight:800;
   letter-spacing:1px;
 }
 
@@ -101,22 +91,9 @@ p{
   background:#111;
 }
 
-/* botão */
-.botao{
-  display:inline-block;
-  margin:60px auto 10px;
-  padding:18px 52px;
-  background:#FFD700;
-  color:#000;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:999px;
-  font-size:17px;
-}
-
-.sub-botao{
-  font-size:13px;
-  color:rgba(255,255,255,0.45);
+/* espaçamento final */
+.fim-capitulo{
+  margin-bottom:72px;
 }
 </style>
 </head>
@@ -129,19 +106,9 @@ if(sessionStorage.getItem("entrada_acesso") !== "ok"){
 }
 </script>
 
-<!-- TOPO -->
+<!-- TOPO (CORRIGIDO — SEM DUPLICAÇÃO E SEM LINHA) -->
 
 <div class="metodo">VMP • PRESENÇA SILENCIOSA</div>
-
-<div class="linha"></div>
-
-<div class="gatilho">
-Agora, observe sem tentar controlar.
-</div>
-
-<div class="metodo">VMP • PRESENÇA SILENCIOSA</div>
-
-<div class="linha"></div>
 
 <div class="gatilho">
 Agora, observe sem tentar controlar.
@@ -189,12 +156,15 @@ Agora, observe sem tentar controlar.
   O comportamento se adapta antes de qualquer percepção consciente.
   </p>
 
-<h4 class="subtitulo">FIXAÇÃO:</h4>
-<p>
-Direção não é execução.<br>
-Direção é eixo estável.
-</p>
+  <h4 class="subtitulo">FIXAÇÃO:</h4>
+  <p>
+  Direção não é execução.<br>
+  Direção é eixo estável.
+  </p>
 
-<div class="fim-capitulo"></div>
+  <div class="fim-capitulo"></div>
 
-<div style="height:60px;"></div>
+</section>
+
+</body>
+</html>
