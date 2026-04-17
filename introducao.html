@@ -1,1 +1,117 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ambiente de Presença — Início</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 12px;
+      text-align: center;
+    }
+
+    .metodo {
+      color: rgba(255,255,255,0.45);
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+
+    .main-title {
+      color: #FFD700;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 12px auto;
+      color: #eaeaea;
+      font-size: 18px;
+      line-height: 1.45;
+      letter-spacing: 0.15px;
+      max-width: 720px;
+    }
+
+    .botao {
+      display: inline-block;
+      margin: 60px auto 10px;
+      padding: 18px 52px;
+      background-color: #FFD700;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 999px;
+      font-size: 17px;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s ease;
+    }
+
+    .botao:hover {
+      opacity: 0.9;
+    }
+
+    .sub-botao {
+      margin-top: 6px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script>
+    if (sessionStorage.getItem("entrada_acesso") !== "ok") {
+      window.location.href = "acesso.html";
+    }
+  </script>
+
+  <!-- Cabeçalho -->
+  <div class="metodo">AMBIENTE DE PRESENÇA</div>
+  <h1 class="main-title">PRESENÇA SILENCIOSA • INÍCIO</h1>
+
+  <p>
+    Algo já está em andamento — mesmo antes da leitura.
+  </p>
+
+  <p>
+    Você percebe sinais que antes eram ignorados.<br><br>
+
+    Pequenos desvios.<br>
+    Respostas automáticas.<br>
+    Momentos em que a ação acontece antes da consciência acompanhar.
+  </p>
+
+  <p>
+    Não é sobre técnica.<br>
+    E também não é sobre comportamento aprendido.
+  </p>
+
+  <p>
+    É sobre o ponto onde o controle ainda não se formou por completo.
+  </p>
+
+  <p>
+    O externo não é o problema.<br>
+    Ele apenas revela o que já não se sustenta internamente.
+  </p>
+
+  <p>
+    Isso não começa com esforço.<br>
+    Começa com percepção.
+  </p>
+
+  <a href="cap1.html" class="botao">CONTINUAR O PROCESSO</a>
+  <div class="sub-botao">acesso imediato</div>
+
+</body>
+</html>
