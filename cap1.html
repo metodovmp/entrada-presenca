@@ -16,7 +16,6 @@ body{
   text-align:center;
 }
 
-/* topo */
 .metodo{
   color:rgba(255,255,255,0.45);
   font-size:13px;
@@ -24,23 +23,12 @@ body{
   margin-bottom:18px;
 }
 
-/* frase gatilho */
 .gatilho{
   color:#eaeaea;
   font-size:16px;
   line-height:1.4;
 }
 
-/* título principal (ajustado — sem gritar) */
-.main-title{
-  color:#FFD700;
-  font-size:22px;
-  font-weight:500;
-  letter-spacing:1px;
-  margin:0;
-}
-
-/* mini descrição */
 .mini-descricao{
   color:rgba(255,255,255,0.45);
   font-size:16px;
@@ -48,7 +36,6 @@ body{
   line-height:1.5;
 }
 
-/* títulos */
 .capitulo-titulo{
   color:#FFD700;
   font-size:20px;
@@ -62,7 +49,6 @@ body{
   font-weight:700;
 }
 
-/* texto */
 p{
   margin:14px auto;
   font-size:18px;
@@ -71,7 +57,6 @@ p{
   max-width:720px;
 }
 
-/* subtítulos */
 .subtitulo{
   margin-top:40px;
   margin-bottom:14px;
@@ -79,7 +64,6 @@ p{
   letter-spacing:1px;
 }
 
-/* imagem */
 .imagem{
   display:block;
   margin:30px auto 40px;
@@ -91,9 +75,27 @@ p{
   background:#111;
 }
 
-/* espaçamento final */
 .fim-capitulo{
   margin-bottom:72px;
+}
+
+/* BOTÃO OVAL DOURADO */
+.botao{
+  display:inline-block;
+  margin:40px auto 60px;
+  padding:14px 28px;
+  background:#FFD700;
+  color:#000;
+  font-size:16px;
+  font-weight:600;
+  text-decoration:none;
+  border-radius:999px;
+  transition:all 0.2s ease;
+}
+
+.botao:hover{
+  background:#e6c200;
+  transform:scale(1.03);
 }
 </style>
 </head>
@@ -106,8 +108,6 @@ if(sessionStorage.getItem("entrada_acesso") !== "ok"){
 }
 </script>
 
-<!-- TOPO (CORRIGIDO — SEM DUPLICAÇÃO E SEM LINHA) -->
-
 <div class="metodo">VMP • PRESENÇA SILENCIOSA</div>
 
 <div class="gatilho">
@@ -115,11 +115,10 @@ Agora, observe sem tentar controlar.
 </div>
 
 <div style="height:80px;"></div>
-
 <div style="height:60px;"></div>
 
 <section class="ativacao">
-
+  
   <div class="linha-superior" style="color:#FFD700;">EIXO</div>
   
 <p class="mini-descricao">
