@@ -2,21 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Ambiente de Presença — Acesso Liberado</title>
+  <title>Protocolo 90S — Acesso Liberado</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       background-color: #000;
-      color: #FFD700;
+      color: #D4AF37;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -24,68 +19,50 @@
       align-items: center;
       text-align: center;
     }
-
     .linha-superior {
       color: rgba(255,255,255,0.45);
       font-size: 14px;
       letter-spacing: 2px;
       margin-bottom: 8px;
     }
-
     .titulo {
-      color: #FFD700;
+      color: #D4AF37;
       font-size: 32px;
       font-weight: 700;
       letter-spacing: 1px;
       margin-bottom: 40px;
     }
-
     .botao {
       display: flex;
       align-items: center;
       justify-content: center;
-
       min-width: 280px;
       min-height: 56px;
-
       padding: 0 24px;
       background-color: #000;
-
-      color: rgba(255,215,0,0.65);
-
+      color: #D4AF37;
       text-decoration: none;
       font-weight: 700;
       font-size: 16px;
       letter-spacing: 0.8px;
-
       border-radius: 999px;
-      border: 1px solid #FFD700;
-      transition: opacity 0.2s ease;
+      border: 1px solid #D4AF37;
+      transition: all 0.2s ease;
     }
-
     .botao:hover {
-      opacity: 0.85;
+      background: #D4AF37;
+      color: #000;
     }
   </style>
-
-  <!-- 🔐 BLOQUEIO DE ACESSO -->
   <script>
-    if (sessionStorage.getItem("entrada_acesso") !== "ok") {
+    if (sessionStorage.getItem("bump_acesso") !== "ok") {
       window.location.href = "acesso.html";
     }
   </script>
-
 </head>
-
 <body>
-
   <div class="linha-superior">ACESSO LIBERADO</div>
-
-  <div class="titulo">ENTRADA INICIADA</div>
-
-  <a href="introducao.html" class="botao">
-    ACESSAR CONTEÚDO
-  </a>
-
+  <div class="titulo">PROTOCOLO 90S</div>
+  <a href="introducao.html" class="botao">INICIAR COMANDO</a>
 </body>
 </html>
